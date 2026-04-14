@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ATS - Advanced Attachment System</title>
+</head>
+<body>
+    <div id="app" class="hidden">
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <div class="logo">
+                    <span class="icon">⚙️</span>
+                    <h1>ATS</h1>
+                </div>
+                <button class="close-btn" id="closeBtn">✕</button>
+            </div>
+
+            <!-- Info da Arma -->
+            <div class="weapon-info" id="weaponInfo">
+                <div class="weapon-icon">🔫</div>
+                <div class="weapon-details">
+                    <span class="label">Arma Equipada</span>
+                    <h2 id="weaponName">Nenhuma arma</h2>
+                    <span class="weapon-hash" id="weaponHash">-</span>
+                </div>
+            </div>
+
+            <!-- Grid de Attachments -->
+            <div class="attachments-section">
+                <h3>Acessórios Disponíveis</h3>
+                <div class="attachments-grid" id="attachmentsGrid">
+                    <!-- Gerado via JS -->
+                </div>
+            </div>
+
+            <!-- Notificação -->
+            <div class="notification" id="notification"></div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>Use <span class="key">ESC</span> para fechar • <span class="key">/ats</span> para abrir</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
